@@ -21,6 +21,6 @@ Route::prefix('admin')->group(function () {
         Route::get('/add', [AuthorController::class, 'add'])->name('add.author');
         Route::post('/add', [AuthorController::class, 'store'])->name('store.author');
         Route::get('/edit/{id}', [AuthorController::class, 'edit'])->name('edit.author');
-        Route::post('/edit', [AuthorController::class, 'update'])->name('update.author');
+        Route::post('/edit/{id}', [AuthorController::class, 'update'])->name('update.author');
         Route::get('/delete/{id}', [AuthorController::class, 'delete'])->name('delete.author');
 });

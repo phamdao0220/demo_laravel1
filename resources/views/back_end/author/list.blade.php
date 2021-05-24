@@ -56,13 +56,13 @@
                     <td>{{$author->nationality}}</td>
                     <td><img width="100px" src="{{asset('storage/'.$author->img)}}"></td>
                     <td>
-                    <a href="{{route('edit.author',$author->id)}}"><i class="fas fa-edit"></i>
-                    </a>
+                        <a href="{{route('edit.author',$author->id)}}"><i class="fas fa-edit"></i>
+                        </a>
                     </td>
                     <td>
-                    <a onclick="return confirm('ban co chac muon xoa {{$author->name}} khong?? ')"
-                    href="{{route('delete.author',$author->id)}}">
-                    <i class="fa fa-trash" aria-hidden="true"></i></a>
+                        <a onclick="return confirm('ban co chac muon xoa {{$author->name}} khong?? ')"
+                           href="{{route('delete.author',$author->id)}}">
+                            <i class="fa fa-trash" aria-hidden="true"></i></a>
 
                     </td>
                 </tr>

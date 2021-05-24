@@ -45,14 +45,14 @@ class AuthorService extends BaseService
 
     function update($request)
     {
-        $author = $this->authorRepo->getInstance();
+        $author = $this->authorRepo->findById($request->id);
         $author->fill($request->all());
         if ($request->hasFile('img')) {
             $path = $request->file('img')->store('authors', 'public');
             $author->img = $path;
 
         }
-        $this->authorRepo->store($author);
+        $this->authorRepo->update($author);
     }
 
     function delete($id)
