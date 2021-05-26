@@ -69,6 +69,9 @@
             @endforeach
             </tbody>
         </table>
+        <nav aria-label="Page navigation">
+            {!! $authors->links() !!}
+        </nav>
     </div>
 
 @endsection

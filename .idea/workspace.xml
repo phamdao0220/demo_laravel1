@@ -2,16 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2acc0d6-8b27-40e1-92a7-e468815a3c05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Repositories/CategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/CategoryService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/AuthorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/AuthorService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-admin-bt5" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-admin-bt5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/form-basic.html" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/form-basic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back_end/author/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back_end/author/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back_end/author/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back_end/author/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back_end/author/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back_end/author/list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="168">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#124#147#0#PHP" expanded="true" />
               </folding>
@@ -39,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="334">
               <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
               <folding>
                 <element signature="e#7#49#0#PHP" expanded="true" />
@@ -49,31 +53,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrix-admin-bt5/html/ltr/form-basic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="395" selection-start-line="395" selection-end-line="395" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/Http/Services/CategoryService.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-              <folding>
-                <element signature="e#3455#3475#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="282">
+              <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -81,8 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthorController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="105">
+              <caret line="20" column="45" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="45" />
               <folding>
                 <element signature="e#40#76#0#PHP" expanded="true" />
               </folding>
@@ -91,22 +84,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Author.php">
+        <entry file="file://$PROJECT_DIR$/config/session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <element signature="e#30#84#0#PHP" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-43" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Services/AuthorService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+            <state relative-caret-position="198">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#121#164#0#PHP" expanded="true" />
               </folding>
@@ -117,8 +105,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/list.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="71" column="10" selection-start-line="21" selection-start-column="4" selection-end-line="71" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding>
+                <element signature="e#33#75#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,17 +153,19 @@
         <option value="$PROJECT_DIR$/app/Http/Repositories/Repository.php" />
         <option value="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/tables.html" />
         <option value="$PROJECT_DIR$/resources/views/back_end/demo.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/back_end/admin/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/back_end/admin/sidebar.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Author.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php" />
         <option value="$PROJECT_DIR$/matrix-admin-bt5/html/ltr/form-basic.html" />
-        <option value="$PROJECT_DIR$/app/Http/Services/AuthorService.php" />
-        <option value="$PROJECT_DIR$/resources/views/back_end/author/list.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Requests/AuthorRequest.php" />
         <option value="$PROJECT_DIR$/resources/views/back_end/author/add.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Services/AuthorService.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/back_end/author/list.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AuthorController.php" />
         <option value="$PROJECT_DIR$/resources/views/back_end/author/edit.blade.php" />
       </list>
     </option>
@@ -326,12 +328,25 @@
               <item name="book_shopee" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_shopee" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
               <item name="book_shopee" type="462c0819:PsiDirectoryNode" />
-              <item name="matrix-admin-bt5" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_shopee" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
@@ -350,6 +365,14 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="back_end" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book_shopee" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="back_end" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book_shopee" type="b2602c69:ProjectViewProjectNode" />
@@ -427,20 +450,21 @@
       <workItem from="1621347994706" duration="552000" />
       <workItem from="1621386610643" duration="562000" />
       <workItem from="1621496069854" duration="8293000" />
-      <workItem from="1621823045498" duration="3365000" />
+      <workItem from="1621823045498" duration="12392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39355000" />
+    <option name="totallyTimeSpent" value="48382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2819063" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27705976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Alibaba Cloud Explorer" order="3" />
+      <window_info id="Alibaba Cloud Explorer" order="3" weight="0.32954547" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
@@ -451,9 +475,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32876712" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.16986302" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32328767" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -499,7 +523,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/AuthorController.php</url>
-          <line>8</line>
+          <line>10</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -558,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1524">
-          <caret line="209" lean-forward="true" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/back_end/admin/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="521">
@@ -578,9 +595,6 @@
           <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrix-admin-bt5/html/ltr/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/back_end/admin/sidebar.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -630,39 +644,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Repositories/CategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrix-admin-bt5/html/ltr/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/AuthorRequest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#124#147#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Services/AuthorService.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding>
-            <element signature="e#121#164#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-632">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthorController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/back_end/admin/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-          <folding>
-            <element signature="e#40#76#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="283">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
+        <state relative-caret-position="334">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="e#7#49#0#PHP" expanded="true" />
@@ -670,27 +681,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/list.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Services/CategoryService.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="71" column="10" selection-start-line="21" selection-start-column="4" selection-end-line="71" selection-end-column="10" />
+        <state relative-caret-position="375">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#33#75#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/add.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Services/AuthorService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="198">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#121#164#0#PHP" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Repositories/AuthorRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#124#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/list.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AuthorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="45" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-43" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/back_end/author/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="29" column="65" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
-          <folding>
-            <element signature="e#3455#3475#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
         </state>
       </provider>
     </entry>

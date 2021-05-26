@@ -16,6 +16,7 @@
     <link href="{{asset('back-end/dist/css/style.min.css')}}" rel="stylesheet">
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    @toastr_css
 
 </head>
 
@@ -187,23 +188,28 @@
                 @include('back_end.admin.footer')
             </div>
         </div>
-        <script src="{{asset('back-end/assets/libs/jquery/dist/jquery.min.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
-        <script src="{{asset('back-end/assets/extra-libs/sparkline/sparkline.js')}}"></script>
-        <script src="{{asset('back-end/dist/js/waves.js')}}"></script>
-        <script src="{{asset('back-end/dist/js/sidebarmenu.js')}}"></script>
-        <script src="{{asset('back-end/dist/js/custom.min.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/excanvas.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/jquery.flot.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/jquery.flot.pie.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/jquery.flot.time.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/jquery.flot.stack.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot/jquery.flot.crosshair.js')}}"></script>
-        <script src="{{asset('back-end/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js')}}"></script>
-        <script src="{{asset('back-end/dist/js/pages/chart/chart-page-init.js')}}"></script>
+    </div>
+</div>
+<script src="{{asset('back-end/assets/libs/jquery/dist/jquery.min.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
+<script src="{{asset('back-end/assets/extra-libs/sparkline/sparkline.js')}}"></script>
+<script src="{{asset('back-end/dist/js/waves.js')}}"></script>
+<script src="{{asset('back-end/dist/js/sidebarmenu.js')}}"></script>
+<script src="{{asset('back-end/dist/js/custom.min.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/excanvas.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/jquery.flot.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/jquery.flot.pie.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/jquery.flot.time.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/jquery.flot.stack.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot/jquery.flot.crosshair.js')}}"></script>
+<script src="{{asset('back-end/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js')}}"></script>
+<script src="{{asset('back-end/dist/js/pages/chart/chart-page-init.js')}}"></script>
+
 
 </body>
-
+@jquery
+@toastr_js
+@toastr_render
 </html>
 

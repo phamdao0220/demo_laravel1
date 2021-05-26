@@ -10,11 +10,13 @@ namespace App\Http\Repositories;
 
 use  App\Models\Author;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AuthorRepository extends Repository
 {
     function getAll()
     {
+//        $authors=DB::table('authors')->paginate(20);
         return Author::all();
     }
 

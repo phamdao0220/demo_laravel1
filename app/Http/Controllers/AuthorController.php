@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AuthorRequest;
 use App\Http\Services\AuthorService;
 use Illuminate\Http\Request;
+use App\Models\Author;
 
 class AuthorController extends Controller
 {
@@ -16,8 +18,9 @@ class AuthorController extends Controller
 
     public function index()
     {
+        $author['authors']=Author::paginate(5);
         $authors = $this->authorService->getAll();
-        return view('back_end.author.list', compact('authors'));
+        return view('back_end.author.list',$author, compact('authors'));
     }
 
     public function add()
@@ -25,11 +28,13 @@ class AuthorController extends Controller
         return view('back_end.author.add');
     }
 
-    public function store(Request $request)
+    public function store(AuthorRequest $request)
     {
+        toastr()->success('du lieu them thanh cong');
         $this->authorService->store($request);
         return redirect()->route('list.author');
     }
+
 
     public function edit($id)
     {
