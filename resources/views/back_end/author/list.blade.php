@@ -10,8 +10,8 @@
                 <div class="ms-auto text-end">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{route('add.author')}}">add</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                            {{--<li class="breadcrumb-item"><a href="{{route('add.author')}}">add</a></li>--}}
+                            {{--<li class="breadcrumb-item active" aria-current="page">Library</li>--}}
                         </ol>
                     </nav>
 
@@ -21,7 +21,7 @@
     </div>
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title mb-0">Tac gia</h5>
+            <h5 class="card-title mb-0">Authors</h5>
         </div>
         <table class="table">
             <thead>
@@ -32,7 +32,7 @@
                 <th scope="col">Product</th>
                 <th scope="col">Nationality</th>
                 <th scope="col">Img</th>
-                <th colspan="2">Action</th>
+                <th colspan="3">Action</th>
             </tr>
             </thead>
             <tfoot>
@@ -43,7 +43,7 @@
                 <th scope="col">Product</th>
                 <th scope="col">Nationality</th>
                 <th scope="col">Img</th>
-                <th colspan="2">Action</th>
+                <th colspan="3">Action</th>
             </tr>
             </tfoot>
             <tbody>
@@ -56,10 +56,9 @@
                     <td>{{$author->nationality}}</td>
                     <td><img width="100px" src="{{asset('storage/'.$author->img)}}"></td>
                     <td>
+                        <a href="{{route('add.author')}}"><i class="fas fa-address-book"></i></a>
                         <a href="{{route('edit.author',$author->id)}}"><i class="fas fa-edit"></i>
                         </a>
-                    </td>
-                    <td>
                         <a onclick="return confirm('ban co chac muon xoa {{$author->name}} khong?? ')"
                            href="{{route('delete.author',$author->id)}}">
                             <i class="fa fa-trash" aria-hidden="true"></i></a>
@@ -69,9 +68,9 @@
             @endforeach
             </tbody>
         </table>
-        <nav aria-label="Page navigation">
-            {!! $authors->links() !!}
-        </nav>
+        <div class="d-flex justify-content-center">
+            {{ $authors->links() }}
+        </div>
     </div>
 
 @endsection

@@ -26,6 +26,11 @@ class AuthorService extends BaseService
         return $this->authorRepo->getAll();
     }
 
+    function index()
+    {
+        return $this->authorRepo->index();
+    }
+
     function store($request)
     {
         $author = $this->authorRepo->getInstance();

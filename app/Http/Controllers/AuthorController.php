@@ -18,9 +18,8 @@ class AuthorController extends Controller
 
     public function index()
     {
-        $author['authors']=Author::paginate(5);
         $authors = $this->authorService->getAll();
-        return view('back_end.author.list',$author, compact('authors'));
+        return view('back_end.author.list',compact('authors'));
     }
 
     public function add()
@@ -30,9 +29,10 @@ class AuthorController extends Controller
 
     public function store(AuthorRequest $request)
     {
-        toastr()->success('du lieu them thanh cong');
         $this->authorService->store($request);
-        return redirect()->route('list.author');
+//        toastr()->success('du lieu them thanh cong');
+        return redirect()->route('list.author')->with('message','Data added Successfully');
+
     }
 
 
@@ -52,5 +52,11 @@ class AuthorController extends Controller
     {
         $this->authorService->delete($id);
         return redirect()->route('list.author');
+    }
+    public function search(Request $request){
+        $authors=Author::where('name','like','%'.$request->search.'%')
+        ->orWhere('product',$request->search)
+        ->get();
+        return view('back_end.author.list',compact('authors'));
     }
 }

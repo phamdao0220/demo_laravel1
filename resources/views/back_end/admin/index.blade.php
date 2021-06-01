@@ -21,17 +21,16 @@
 </head>
 
 <body>
-<div class="preloader">
-    <div class="lds-ripple">
-        <div class="lds-pos"></div>
-        <div class="lds-pos"></div>
-    </div>
-</div>
+{{--<div class="preloader">--}}
+    {{--<div class="lds-ripple">--}}
+        {{--<div class="lds-pos"></div>--}}
+        {{--<div class="lds-pos"></div>--}}
+    {{--</div>--}}
+{{--</div>--}}
 <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
      data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
     @include('back_end.admin.header')
     @include('back_end.admin.sidebar')
-
     <div class="page-wrapper">
         @yield('content')
         <div class="container-fluid">

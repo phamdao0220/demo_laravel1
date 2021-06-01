@@ -20,7 +20,6 @@ class CreateAuthorsTable extends Migration
             $table->string('product');
             $table->string('nationality');
             $table->string('img');
-
             $table->timestamps();
         });
     }
