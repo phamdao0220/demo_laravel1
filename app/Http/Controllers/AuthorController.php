@@ -6,6 +6,7 @@ use App\Http\Requests\AuthorRequest;
 use App\Http\Services\AuthorService;
 use Illuminate\Http\Request;
 use App\Models\Author;
+use Illuminate\Support\Facades\DB;
 
 class AuthorController extends Controller
 {
@@ -18,7 +19,7 @@ class AuthorController extends Controller
 
     public function index()
     {
-        $authors = $this->authorService->getAll();
+        $authors = DB::table('authors')->paginate(5);
         return view('back_end.author.list',compact('authors'));
     }
 
@@ -31,7 +32,7 @@ class AuthorController extends Controller
     {
         $this->authorService->store($request);
 //        toastr()->success('du lieu them thanh cong');
-        return redirect()->route('list.author')->with('message','Data added Successfully');
+        return redirect()->route('list.author');
 
     }
 

@@ -35,6 +35,8 @@ class AuthorService extends BaseService
     {
         $author = $this->authorRepo->getInstance();
         $author->fill($request->all());
+        $author->save();
+        toastr()->success('du lieu them thanh cong');
         if ($request->hasFile('img')) {
             $path = $request->file('img')->store('authors', 'public');
             $author->img = $path;
