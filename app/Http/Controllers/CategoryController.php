@@ -6,6 +6,7 @@ use App\Http\Requests\CategoryRequets;
 use App\Http\Services\CategoryService;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
@@ -18,7 +19,7 @@ class CategoryController extends Controller
 
     public function index()
     {
-        $categories = $this->categoryService->getAll();
+        $categories=DB::table('categories')->paginate(3);
         return view('back_end.category.list',compact('categories'));
     }
 
@@ -53,8 +54,8 @@ class CategoryController extends Controller
     }
     public function search(Request $request){
         $categories=Category::where('name','like','%'.$request->search.'%')
-            ->orWhere('product',$request->search)
-            ->get();
+            ->orWhere('product','like','%'.$request->search.'%')
+            ->paginate(3) ;
         return view('back_end.category.list',compact('categories'));
     }
 }

@@ -16,55 +16,51 @@ class AuthorService extends BaseService
 {
     protected $authorRepo;
 
-    public function __construct(AuthorRepository $authorRepository)
+        public function __construct(AuthorRepository $authorRepository)
     {
         $this->authorRepo = $authorRepository;
     }
 
-    function getAll()
-    {
-        return $this->authorRepo->getAll();
-    }
-
-    function index()
-    {
-        return $this->authorRepo->index();
-    }
-
-    function store($request)
-    {
-        $author = $this->authorRepo->getInstance();
-        $author->fill($request->all());
-        $author->save();
-        toastr()->success('du lieu them thanh cong');
-        if ($request->hasFile('img')) {
-            $path = $request->file('img')->store('authors', 'public');
-            $author->img = $path;
-
+        function getAll()
+        {
+            return $this->authorRepo->getAll();
         }
-        $this->authorRepo->store($author);
-    }
 
-    function getById($id)
-    {
-        return $this->authorRepo->findById($id);
-    }
+        function store($request)
+        {
+            $author = $this->authorRepo->getInstance();
+            $author->fill($request->all());
+            toastr()->success('dữ liệu thêm thành công ');
+            if ($request->hasFile('img')) {
+                $path = $request->file('img')->store('authors', 'public');
+                $author->img = $path;
 
-    function update($request)
-    {
-        $author = $this->authorRepo->findById($request->id);
-        $author->fill($request->all());
-        if ($request->hasFile('img')) {
-            $path = $request->file('img')->store('authors', 'public');
-            $author->img = $path;
-
+            }
+            $this->authorRepo->store($author);
         }
-        $this->authorRepo->update($author);
-    }
 
-    function delete($id)
-    {
-        $auth = $this->authorRepo->findById($id);
-        $auth->delete();
+        function getById($id)
+        {
+            return $this->authorRepo->findById($id);
+        }
+
+        function update($request)
+        {
+            $author = $this->authorRepo->findById($request->id);
+            $author->fill($request->all());
+            toastr()->success('dữ liệu sửa thành công ');
+            if ($request->hasFile('img')) {
+                $path = $request->file('img')->store('authors', 'public');
+                $author->img = $path;
+
+            }
+            $this->authorRepo->update($author);
+        }
+
+        function delete($id)
+        {
+            $auth = $this->authorRepo->findById($id);
+            toastr()->warning('dữ liệu xoá thành công ');
+            $auth->delete();
     }
 }

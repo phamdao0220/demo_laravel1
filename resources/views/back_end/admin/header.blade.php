@@ -31,13 +31,8 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </li>
-                <li class="nav-item search-box"> <a class="nav-link waves-effect waves-dark"
-                                                    href="javascript:void(0)"><i class="ti-search"></i></a>
-                    <form  action="{{route('search.author')}}" method="get" class="app-search position-absolute">
-                        <input type="text" name="search" class="form-control" placeholder="Search &amp; enter"> <a
-                                class="srh-btn"><i class="ti-close"></i></a>
-                    </form>
-                </li>
+                @yield('search')
+
             </ul>
             <ul class="navbar-nav float-end">
                 <li class="nav-item dropdown">
@@ -119,7 +114,7 @@
                         <a class="dropdown-item" href="javascript:void(0)"><i
                                     class="ti-settings me-1 ms-1"></i> Account Setting</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="javascript:void(0)"><i
+                        <a class="dropdown-item" href="{{route('logoutAdmin')}}"><i
                                     class="fa fa-power-off me-1 ms-1"></i> Logout</a>
                         <div class="dropdown-divider"></div>
                         <div class="ps-4 p-10"><a href="javascript:void(0)"

@@ -16,16 +16,10 @@ class AuthorRepository extends Repository
 {
     function getAll()
     {
-        $authors=DB::table('authors')->paginate(5);
-        return view('back_end.author.list',compact('authors'));
-//        return Author::orderBy('id', 'DESC')->paginate(10);
-    }
 
-    function index()
-    {
         return Author::all();
-    }
 
+    }
     function getInstance()
     {
 

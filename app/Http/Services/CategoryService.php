@@ -26,14 +26,10 @@ class CategoryService extends BaseService
         return $this->categoryRepo->getAll();
     }
 
-    function index()
-    {
-        return $this->categoryRepo->index();
-    }
-
     function store($request)
     {
         $categories = $this->categoryRepo->getInstance();
+        toastr()->success('dữ liệu thêm thành công ');
         $categories->name = $request->name;
         $categories->product = $request->product;
         $this->categoryRepo->store($categories);
@@ -47,6 +43,7 @@ class CategoryService extends BaseService
     function update($request)
     {
         $category = $this->categoryRepo->findById($request->id);
+        toastr()->success('dữ liệu sửa  thành công ');
         $category->name= $request->name;
         $category->product=$request->product;
         return $this->categoryRepo->update($category);
@@ -55,6 +52,7 @@ class CategoryService extends BaseService
     function delete($id)
     {
         $categories = $this->categoryRepo->findById($id);
+        toastr()->success('dữ liệu xoá thành công ');
         $categories->delete();
     }
 }

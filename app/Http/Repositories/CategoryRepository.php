@@ -16,13 +16,8 @@ class CategoryRepository extends Repository
 {
     public function getAll()
     {
-        $category=DB::table('categories')->paginate(5);
-        return view('back_end.author.list',compact('category'));
-    }
-
-    function index()
-    {
         return Category::all();
+
     }
 
     function getInstance()

@@ -15,13 +15,19 @@ class CategoryRequets extends FormRequest
     {
         return true;
     }
-
+    public function rules()
+    {
+        return [
+            'name' => 'required',
+            'product' => 'required',
+        ];
+    }
     /**
      * Get the validation rules that apply to the request.
      *
      * @return array
      */
-    public function rules()
+    public function messages()
     {
         return [
             'name.required' => 'Trường name không được để trống',

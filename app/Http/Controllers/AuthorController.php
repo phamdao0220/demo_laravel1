@@ -19,7 +19,7 @@ class AuthorController extends Controller
 
     public function index()
     {
-        $authors = DB::table('authors')->paginate(5);
+        $authors = DB::table('authors')->paginate(3);
         return view('back_end.author.list',compact('authors'));
     }
 
@@ -31,7 +31,6 @@ class AuthorController extends Controller
     public function store(AuthorRequest $request)
     {
         $this->authorService->store($request);
-//        toastr()->success('du lieu them thanh cong');
         return redirect()->route('list.author');
 
     }
@@ -56,8 +55,8 @@ class AuthorController extends Controller
     }
     public function search(Request $request){
         $authors=Author::where('name','like','%'.$request->search.'%')
-        ->orWhere('product',$request->search)
-        ->get();
+        ->orWhere('product','like','%'.$request->search.'%')
+        ->paginate(3) ;
         return view('back_end.author.list',compact('authors'));
     }
 }

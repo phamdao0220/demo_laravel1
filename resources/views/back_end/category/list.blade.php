@@ -2,6 +2,15 @@
 @section('title')
     <title>Trang chu</title>
 @endsection
+@section('search')
+    <li class="nav-item search-box"><a class="nav-link waves-effect waves-dark"
+                                       href="javascript:void(0)"><i class="ti-search"></i></a>
+        <form action="{{route('search.category')}}" method="get" class="app-search position-absolute">
+            <input type="text" name="search" class="form-control" placeholder="Search &amp; enter"> <a
+                    class="srh-btn"><i class="ti-close"></i></a>
+        </form>
+    </li>
+@endsection
 @section('content')
     <div class="page-breadcrumb">
         <div class="row">
@@ -52,10 +61,9 @@
             @endforeach
             </tbody>
         </table>
-        {{--<span>{!! $authors->links() !!}</span>--}}
-        <nav aria-label="Page navigation">
-        {!! $categories->links() !!}
-        </nav>
+        <div class="d-flex justify-content-center">
+            {{ $categories->links() }}
+        </div>
     </div>
 
 @endsection
